@@ -12,12 +12,12 @@ Conclusion Thus, the novel proposition of utilising an ANN, functioning as an er
 
 ## Outcome:
 The presented algorithm validated on synthetic images consistent with the training scope of the ANN reveal the potential of ANNs as an approach to dynamic subset selection and displacement error prediction:
-- the ANN accurately and precisely predicts the DESD of a subset from its SPQMs and standard deviation of image noise; 
-- subsequently the ANN accurately and reliably predicts the trend in noise suppression for an analysis which along with knowledge of the severity of the displacement field complexity, generally known a priori in experimental solid mechanics applications, affords all the necessary information to stipulate a DESD threshold appropriate for the analysis; 
-- ANNDSS dynamically appoints the smallest subset size for each query point, based on the local speckle pattern, that offers noise suppression satisfying this DESD threshold; 
-- the method offers improved noise suppression relative to the best results for the traditional trial and error approach to subset size selection for the same mean subset size
--  knowledge of the contribution of image noise to random error enables the quality of the computed displacement field to be inferred; and 
-- provided the DESD threshold is appropriate, ANNDSS appoints subset sizes offering a favourable compromise between noise suppression and spatial resolution for up to moderate displacement gradients. 
+- the ANN accurately and precisely predicts the DESD of a subset from its SPQMs and standard deviation of image noise.
+- subsequently the ANN accurately and reliably predicts the trend in noise suppression for an analysis which along with knowledge of the severity of the displacement field complexity, generally known a priori in experimental solid mechanics applications, affords all the necessary information to stipulate a DESD threshold appropriate for the analysis.
+- ANNDSS dynamically appoints the smallest subset size for each query point, based on the local speckle pattern, that offers noise suppression satisfying this DESD threshold.
+- the method offers improved noise suppression relative to the best results for the traditional trial and error approach to subset size selection for the same mean subset size.
+-  knowledge of the contribution of image noise to random error enables the quality of the computed displacement field to be inferred.
+- provided the DESD threshold is appropriate, ANNDSS appoints subset sizes offering a favourable compromise between noise suppression and spatial resolution for up to moderate displacement gradients.
 
 Although the generalisability of the ANN and thus potential of ANNDSS is limited for speckle pattern characteristics outside the scope that the ANN was trained on, ANNDSS remains capable of offering a favourable compromise between noise suppression and spatial resolution for up to moderate displacement gradients. Furthermore, ANNDSS can be readily implemented with any 2D DIC algorithm capable of assigning the subset size of each query point independently while extension to stereo-DIC should be straightforward.
 Thus, this novel approach to DSS purely based on image information through utilising an ANN as an error prediction tool is an attractive alternative to the traditional trial and error approach of subset size selection.
